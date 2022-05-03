@@ -7,6 +7,6 @@ names = ["Zunalora", "Kyzumath", "Malos", "Manazyri", "Zycandos", "Cornelius", "
 num = randint(0,9) #picks out random names to generate in the code
 name = (names[num])
 
-print("o()xx[{:::::::::::::::: Welcome to Cafe Sephiroth :::::::::::::>") #prints the welcome message along with the randomly generated name
+print("o()xx[{:::::::::::::::: Welcome to Cafe Encantadia :::::::::::::>") #prints the welcome message along with the randomly generated name
 print("✧─ ･ ｡ﾟ★: *.✦ .* :★. ─✧ My name is", name, "✧─ ･ ｡ﾟ★: *.✦ .* :★. ─✧")
 print("I will be asissting you for today. How may I help our dear costumer? ( ✿ ◠ ‿ ◠ )")
