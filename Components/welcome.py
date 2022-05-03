@@ -1,5 +1,3 @@
-#Jarra Piatos- Barista chatbot program: Digital Assessment Term 1
-
 import random #libary that is within python
 from random import randint #random intiger (random number generator)
 
@@ -9,5 +7,6 @@ names = ["Zunalora", "Kyzumath", "Malos", "Manazyri", "Zycandos", "Cornelius", "
 num = randint(0,9) #picks out random names to generate in the code
 name = (names[num])
 
-print(name) #prints the name thats is randomly generated
-
+print("o()xx[{:::::::::::::::: Welcome to Cafe Sephiroth :::::::::::::>") #prints the welcome message along with the randomly generated name
+print("✧─ ･ ｡ﾟ★: *.✦ .* :★. ─✧ My name is", name, "✧─ ･ ｡ﾟ★: *.✦ .* :★. ─✧")
+print("I will be asissting you for today. How may I help our dear costumer? ( ✿ ◠ ‿ ◠ )")
