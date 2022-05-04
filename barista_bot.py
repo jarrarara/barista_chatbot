@@ -1,5 +1,6 @@
 #Jarra Piatos- Barista chatbot program: Digital Assessment Term 1
 
+import random #libary that is within python
 from random import randint #random intiger (random number generator)
 
 #list of randomly generated names
@@ -71,5 +72,4 @@ def main():
     Returns: None
     '''
     welcome()
-
 main()
