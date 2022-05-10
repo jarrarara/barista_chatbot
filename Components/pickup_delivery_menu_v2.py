@@ -1,9 +1,5 @@
 #user can choose whether they want pickup or delivery
 
-#bugs
-#will only work for valid input "d" and "p"
-#invalid input triggers else statement but program does not ask for input again
-
 print ("Do you want your special drink to be picked up or delivered?")
 
 print ("For delivery, please enter 'd'")

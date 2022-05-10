@@ -1,27 +1,20 @@
 #user can choose whether they want pickup or delivery
 
 #bugs
-#need to make it so that it only accepts 1 or 2
+#invalid input triggers else statement but program does not ask for input again
 
-print ("Do you want your magical drink to be picked up or delivered? ")
+print ("Do you want your special drink to be picked up or delivered?")
 
 print ("For pickup, please enter '1'")
 print ("For delivery, please enter '2'")
 
-low = 1
-high = 2
+delivery = input ()
 
-while True:
-    try:
-        delivery = int(input ("Please enter a number ≧ ◠ ᴥ ◠ ≦ ")) #int for integer input 
-        if delivery == 1:
-            print ("You have chosen to pickup your order （っ＾▿＾)っ♥") #prints this message if typed 2
-            break
+if delivery == 1:
+    print ("You have chosen to pickup your order （っ＾▿＾)っ♥") #prints this message if typed 2
     
-        elif delivery == 2:
-            print ("You have chosen delivery for today ʕ•́ᴥ•̀ʔ") #prints this message if typed 1
-            break
+elif delivery == 2:
+    print ("You have chosen delivery for today ʕ•́ᴥ•̀ʔ") #prints this message if typed 1
     
-    except ValueError: 
-        print ("Sorry, that was an invalid input ( > ⌂ < ) ") #prints this message if input entered incorrectly"
-        print ("Please enter 1 or 2")
+else: 
+    print ("Sorry, that was not a valid input ( > ⌂ < ) ")
