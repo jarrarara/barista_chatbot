@@ -33,7 +33,7 @@ def pickup():
 
     while True:
         try:
-            delivery = int(input ("Please enter a number ≧ ◠ ᴥ ◠ ≦  ")) #int for integer input 
+            delivery = int(input ("Please enter a number ≧ ◠ ᴥ ◠ ≦:  ")) #int for integer input 
             if delivery >= 1 and delivery <= 2:
                 if delivery == 1:
                     print ("You have chosen to pickup your order （っ＾▿＾)っ♥") #prints this message if typed 2
