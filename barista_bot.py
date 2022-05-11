@@ -33,18 +33,18 @@ def pickup():
 
     while True:
         try:
-            delivery = int(input ("Please enter a number ≧ ◠ ᴥ ◠ ≦:  ")) #int for integer input 
-            if delivery >= 1 and delivery <= 2:
+            delivery = int(input ("Please enter a number ≧ ◠ ᴥ ◠ ≦ :  ")) #int for integer input 
+            if delivery >= 1 and delivery <= 2: #makes sure that only numbers more than 1 or equal to 1 and more less than or equal to 2 can only be input
                 if delivery == 1:
                     print ("You have chosen to pickup your order （っ＾▿＾)っ♥") #prints this message if typed 2
-                    break
+                    break #breaks the 'asking if pickup or delviery" cycle out of the loop
         
                 elif delivery == 2:
                     print ("You have chosen delivery for today ʕ•́ᴥ•̀ʔ") #prints this message if typed 1
-                    break
+                    break #breaks the 'asking if pickup or delviery" cycle out of the loop
         
             else:
-                print("Number must be '1' or '2'")
+                print("Number must be '1' or '2'") #prints messgae if any other number other than 1 or 2 is typed
         except ValueError: 
             print ("Sorry, that was an invalid input ( > ⌂ < ) ") #prints this message if input entered incorrectly"
             print ("Please enter 1 or 2")

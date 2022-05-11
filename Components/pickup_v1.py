@@ -1,4 +1,5 @@
 #to be able to get information: the customer's name and phone number
+#bugs: accepts blank input
 
 print("Please enter your pickup information (*＾▽＾): ")
 
