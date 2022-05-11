@@ -1,4 +1,4 @@
-customer_details = {}
+customer_details = {} #customer details dictionary
 
 print("Please enter your pickup information (*＾▽＾)")
 
