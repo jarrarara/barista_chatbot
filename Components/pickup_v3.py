@@ -21,3 +21,5 @@ while not valid:
         break #breaks the 'asking for phone number" cycle out of the loop
     else:
         print("Sorry, this cannot be left blank ( T ^ T )")
+        
+print (customer_details)
