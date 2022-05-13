@@ -5,7 +5,7 @@ def not_blank(question): #'question' parameter becomes the question from basic i
     while not valid:
         response = input(question)
         if response != "": #if the input is not blank it returns to print the entered customer details
-            return response
+            return response.title() #makes the first letter of every word a capital letter
         else: #if the input is blank, prints the response below then asks the 'question' again
             print("Sorry, this cannot be left blank ( T ^ T )")
 
