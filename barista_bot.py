@@ -48,11 +48,12 @@ def order_type():
             if delivery >= 1 and delivery <= 2: #makes sure that only numbers more than 1 or equal to 1 and more less than or equal to 2 can only be input
                 if delivery == 1:
                     print ("You have chosen to pickup your order （っ＾▿＾)っ♥") #prints this message if typed 2
-                    pickup() #if chosen pickup, will print pickup input information
+                    pickup_info() #if chosen pickup, will print pickup input information
                     break #breaks the 'asking if pickup or delviery" cycle out of the loop
         
                 elif delivery == 2:
                     print ("You have chosen delivery for today ʕ•́ᴥ•̀ʔ") #prints this message if typed 1
+                    delivery_info() #if chosen pickup, will print pickup input information
                     break #breaks the 'asking if pickup or delviery" cycle out of the loop
         
             else:
@@ -63,7 +64,7 @@ def order_type():
 
 #Pickup information - name and phone number
 #name basic information
-def pickup():
+def pickup_info():
     question = ("Please enter your name on the space provided (*＾▽＾): ")
 #customer name
     customer_details ["name"] = not_blank(question)
@@ -79,8 +80,40 @@ def pickup():
 
 
 #Delivery infromation - name, address and phone
+def delivery_info():
+    question = ("Please enter your name on the space provided (*＾▽＾): ")
+#customer name
+    customer_details ["name"] = not_blank(question)
+#prints the entered customer details
+    print (customer_details["name"])
 
+#phone number basic information
+    question = ("Please enter your phone number on the space provided (*＾▽＾): ")
+#customer phone number
+    customer_details ["phone"] = not_blank(question)
+#prints the entered customer details
+    print (customer_details["phone"])
+#house number basic information
+    question = ("Please enter your house number on the space provided (^_^)/: ")
+#customer house number
+    customer_details ["house"] = not_blank(question)
+#prints the entered customer details
+    print (customer_details["house"])
 
+#street name basic information
+    question = ("Please enter your street name on the space provided (^・ω・^): ")
+#customer name
+    customer_details ["street"] = not_blank(question)
+#prints the entered customer details
+    print (customer_details["street"])
+
+#suburb basic information
+    question = ("Please enter your suburb on the space provided (* ^ v ^ *): ")
+#customer name
+    customer_details ["suburb"] = not_blank(question)
+#prints the entered customer details
+    print (customer_details["suburb"])
+    print(customer_details)
 
 
 #Choose total number of drinks - maximum 5 drinks per customer
