@@ -120,7 +120,6 @@ def delivery_info():
     customer_details ["suburb"] = not_blank(question)
 #prints the entered customer details
     print (customer_details["suburb"])
-    print(customer_details)
 
 #Drinks menu
 

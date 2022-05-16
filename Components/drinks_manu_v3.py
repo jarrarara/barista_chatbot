@@ -11,4 +11,4 @@ def menu(): #function for running the drinks menu selection and prices
         print("{} {} ${}" .format(count+1, drink_names[count], drink_prices[count])) #prints the drinks names and the drink price together in menu format
         #+1 starts the count at 1 and not 0
         
-menu()
+menu() 
