@@ -1,5 +1,13 @@
 #Jarra Piatos- Barista chatbot program: Digital Assessment Term 1
 
+#menu that users can choose from and how many drinks they want
+#list of drink names
+drink_names = ['Heart of the City','Golden Eden','Night of Swirling Stars','Moonlit Alley','Foamy Reef','Scholar Afternoon',
+            'Brightcrown','Laughter and Cheer','Misty Garden','Love Poem','Sweet Cider Kiss','Dawning Dew','Gray Valley Sunset','Snow-Covered Kiss']
+
+#list of prices of drinks
+drink_prices = ['6.50','6.50','6.50','6.50','7.50','7.50','7.50','7.50','8.00','8.00','8.00','8.00','9.00','9.00'] 
+
 import random #libary that is within python
 from random import randint #random intiger (random number generator)
 
@@ -19,8 +27,7 @@ def not_blank(question): #'question' parameter becomes the question from basic i
             print("Sorry, this cannot be left blank ( T ^ T )")
             
 #Welcome message with random name
-#defines fuction welcome
-def welcome(): 
+def welcome(): #function for the opening greeting of the user
     '''
     Purpose: to generate a random name from the list and print a welcome message to the user
     Parameters: none
@@ -33,7 +40,7 @@ def welcome():
     print("I will be asissting you for today. How may I help our dear costumer? ( ✿ ◠ ‿ ◠ )")
 
 #Menu for pickup or delivery
-def order_type(): 
+def order_type(): #function for asking the user if they want pickup or delivery for their order
     print ("Do you want your magical drink to be picked up or delivered?")
 
     print ("For pickup, please enter '1'")
@@ -115,13 +122,19 @@ def delivery_info():
     print (customer_details["suburb"])
     print(customer_details)
 
+#Drinks menu
+
+def menu(): #function for running the drinks menu selection and prices
+    num_drinks = 14
+
+    for count in range (num_drinks):
+        print("{} {} ${}" .format(count+1, drink_names[count], drink_prices[count])) #prints the drinks names and the drink price together in menu format
+        #+1 starts the count at 1 and not 0
 
 #Choose total number of drinks - maximum 5 drinks per customer
 
 
 
-
-#Drinks menu
 
 
 
@@ -155,6 +168,7 @@ def main():
     '''
     welcome()
     order_type()
+    menu()
 
 
 main()
