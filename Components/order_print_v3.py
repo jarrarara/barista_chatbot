@@ -20,4 +20,4 @@ def print_order():
     total_cost = sum(order_cost)
     print(f"The total cost of your order is:${total_cost:.2f}" "!!" " o(* > ω < *)o") #prints the total cost of the order
     
-    print_order()
+print_order()
